@@ -1,4 +1,4 @@
-# IQ Simulations
+# MY Simulations
 
 This repo hosts gazebo worlds for various drone scenarios and various drone configurations. This Repo is specifically designed to work with the Ardupilot control system, and utilizes the ardupilot gazebo plugin to allow the ardupilot control software to interface and control the model drone in gazebo. 
 
@@ -7,33 +7,6 @@ This repo hosts gazebo worlds for various drone scenarios and various drone conf
 - [Quadcopters](#drone-simulations)
 - [Quad-Planes](#quad-planes)
 - [Boats](#boat-simulation)
-
-## Community Discord Server
-
-Come be a part of the growing community of drone application developers! Join the conversation in our [discord](https://discord.gg/xZjXaAf).
-
-## IQ Tutorials
-This Repo is part of the Intelligent Quads Software Development tutorial series. Please take a look at the following resources to learn more about how to use this repository.
-
-[Intelligent Quads Text Tutorials](https://github.com/Intelligent-Quads/iq_tutorials)
-
-[Intelligent Quads Video Tutorials](https://www.youtube.com/channel/UCuZy0c-uvSJglnZfQC0-uaQ)
-
-
-## Dependencies 
-
-Take a look at these tutorials to setup ardupilot, gazebo and the ardupilot gazebo plugin 
-
-[Installing Ardupilot and MAVProxy](https://github.com/Intelligent-Quads/iq_tutorials/blob/master/docs/Installing_Ardupilot.md)
-
-[Installing QGroundControl](https://github.com/Intelligent-Quads/iq_tutorials/blob/master/docs/installing_qgc.md)
-
-[Installing Gazebo and ArduPilot Plugin](https://github.com/Intelligent-Quads/iq_tutorials/blob/master/docs/installing_gazebo_arduplugin.md)
-
-Installing x-term is recommended as it allows the ardupilot sitl interface to run in a terminal that will cleanly close when closing you sitl instance
-```
-sudo apt install xterm
-```
 
 ## Drone Simulations 
 
@@ -50,13 +23,12 @@ This repo contains a couple different gazebo worlds containing various ardupilot
 
 Each world contains a corresponding launch file. For example to launch `runway.world` run
 ```
-roslaunch iq_sim runway.launch
+roslaunch my_sim runway.launch
 ``` 
 Launch the ardupilot instance by running 
 ```
 cd ~/ardupilot/ArduCopter/ && sim_vehicle.py -v ArduCopter -f gazebo-iris --console
 ``` 
-For more information, take a look at the corresponding tutorials [here](https://github.com/Intelligent-Quads/iq_tutorials)
 
 ## Quad Planes 
 
@@ -75,7 +47,7 @@ In order to use the gazebo quad plane sim a few files needed to be modified in a
 },
 ```
 
-copy the file `iq_sim/scripts/vtol-params/gazebo_quadplane.parm` to `ardupilot/Tools/autotest/default_params/gazebo_quadplane.parm`
+copy the file `my_sim/scripts/vtol-params/gazebo_quadplane.parm` to `ardupilot/Tools/autotest/default_params/gazebo_quadplane.parm`
 
 ### Running VTOL sim
 
@@ -83,7 +55,7 @@ copy the file `iq_sim/scripts/vtol-params/gazebo_quadplane.parm` to `ardupilot/T
 
 First terminal 
 ```
-roslaunch iq_sim vtol.launch
+roslaunch my_sim vtol.launch
 ```
 Second terminal
 ```
@@ -111,7 +83,7 @@ sim_vehicle.py -v APMrover2 -f gazebo-rover  -m --mav10 --console -L Viridian
 ```
 
 
-## IQ_SIM Models
+## MY_SIM Models
 
 
 ### drone1-12
