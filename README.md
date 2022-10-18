@@ -75,7 +75,7 @@ Recently I have been experimenting with Ardurover for controlling an autonomous 
 
 First terminal 
 ```
-roslaunch iq_sim boat.launch
+roslaunch my_sim boat.launch
 ```
 Second terminal
 ```
@@ -87,7 +87,7 @@ sim_vehicle.py -v APMrover2 -f gazebo-rover  -m --mav10 --console -L Viridian
 
 
 ### drone1-12
-This repo hosts a few helpful gazebo models you can use to build upon. Included in this repo are 12 drones which contain the ardupilot plugin. Each ardupilot plugin is staggered such that you can simulate multiple unique aircraft using ardupilot's SITL. For more information please see the iq_tutorial on [ardupilot drone swarming](https://github.com/Intelligent-Quads/iq_tutorials/blob/master/docs/swarming_ardupilot.md)
+This repo hosts a few helpful gazebo models you can use to build upon. Included in this repo are 12 drones which contain the ardupilot plugin. Each ardupilot plugin is staggered such that you can simulate multiple unique aircraft using ardupilot's SITL.
 
 ### drone_with_lidar
 
