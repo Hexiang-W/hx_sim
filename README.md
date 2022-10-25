@@ -1,5 +1,7 @@
 # MY Simulations
 
+How'all doing! This is Haysen, welcome to my github repository!
+
 This repo hosts gazebo worlds for various drone scenarios and various drone configurations. This Repo is specifically designed to work with the Ardupilot control system, and utilizes the ardupilot gazebo plugin to allow the ardupilot control software to interface and control the model drone in gazebo. 
 
 ## Vehicles Supported 
