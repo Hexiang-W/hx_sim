@@ -1,0 +1,6 @@
+*-backups
+*fp-info-cache*
+_libraries
+*.bak
+*auto_save*
+*.DS_store
